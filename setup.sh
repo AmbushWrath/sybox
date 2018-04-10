@@ -28,3 +28,8 @@ cd vim
 	--prefix=/usr/local
 make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
 make install
+cd ~
+rm -rf vim
+git clone https://github.com/AmbushWrath/dotfiles.git vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp ~/vim/backup.sh ~/backp.sh
