@@ -9,8 +9,8 @@ yum -y install python36u-pip
 yum -y install python36u-devel
 ln -s /usr/bin/python3.6 /usr/bin/python3
 ln -s /usr/bin/pip3.6 /usr/bin/pip3
-yum group install "Development Tools"
-yum install ncurses-devel
+yum -y group install "Development Tools"
+yum -y install ncurses-devel kernel-devel cmake
 cd ~
 git clone https://github.com/vim/vim.git
 cd vim
